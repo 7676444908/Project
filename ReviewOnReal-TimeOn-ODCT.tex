@@ -1,0 +1,69 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Review on Real-Time On-Orbit Estimation Method for Microthruster Thrust
+	Based on High-Precision Orbit Determination\\
+
+}
+
+\author{\IEEEauthorblockN{D Surya Ratna Prakash}
+\IEEEauthorblockA{\textit{Department of Computational and Data Sciences} \\
+\textit{Indian Institute of Science}\\
+Bangalore, India \\
+suryaratna@iisc.ac.in}
+}
+
+\maketitle
+
+\begin{abstract}
+Review on Real-Time On-Orbit Estimation Method for Microthruster Thrust Based on High-Precision Orbit Determination. Discuss the Strengths and Weaknesses of the methodology to estimate the orbit on-Board during the continuous thrust.  
+\end{abstract}
+
+\begin{IEEEkeywords}
+Orbit Estimation, Microthruster, Cubature Kalman ﬁlter, Orbital Dynamic Model 
+\end{IEEEkeywords}
+
+\section{Introduction}
+This document discuss the topic related to satellite orbit determination. In satellite orbit determination mainly contains three phases. First one is data processing, second is predicting measurements and finally orbit estimation and statistical evaluation. Here orbit determination of a satellite experiencing continuous thrust discussed.    
+
+\section{Strengths of paper \cite{yang2021real}}
+
+Strengths of Real-Time On-Orbit Estimation Method for Microthruster Thrust Based on High-Precision Orbit Determination as follows :
+
+\begin{itemize}
+\item Method Cubature Kalman filter is easy to implement on-Board system.
+\item On-Orbit estimation method estimating the acceleration due to small force
+\item Estimation algorithm is simple and less computational cost
+\item Observations Predicting model has High precision 
+\item Accounted thrust force  of the microthruster in first order Markov process and satisfy the Langevin differential equation.
+\item Estimation technique algorithm less divergence issues and better stability compare to standard methods like Extended Kalman filter
+           
+ 
+\end{itemize}
+
+\section{Weaknesses of paper \cite{yang2021real}}
+Weaknesses of Real-Time On-Orbit Estimation Method for Microthruster Thrust Based on High-Precision Orbit Determination as follows :
+\begin{itemize}
+\item Method Cubature Kalman filter is particular case of sigma point filter.
+\item Estimation algorithm not estimating the accelerator meter bias and scale factors. 
+\item Estimation algorithm required ground simulation to finalize the process noise and first order Markov process time parameters and the standard deviation.
+\item Limitation of estimation algorithm not discussed. It required for Rel-Time On-Board estimation algorithm. 
+\item Simulation are carried out only for circular orbit.
+\item Accounted thrust force as perturbation equation is first order accurate.  
+\end{itemize}
+
+
+\bibliographystyle{plain}
+\bibliography{reference}
+
+\end{document}

@@ -1,0 +1,70 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Review on Satellite Orbit Determination Based on Stahel–Donoho Kernel Estimator\\
+
+}
+
+\author{\IEEEauthorblockN{D Surya Ratna Prakash}
+\IEEEauthorblockA{\textit{Department of Computational and Data Sciences} \\
+\textit{Indian Institute of Science}\\
+Bangalore, India \\
+suryaratna@iisc.ac.in}
+}
+
+\maketitle
+
+\begin{abstract}
+Review on Satellite Orbit Determination Based on Stahel–Donoho Kernel Estimator. Discuss the Strengths and Weaknesses of the methodology to estimate the orbit with Model error compensation technology.  
+\end{abstract}
+
+\begin{IEEEkeywords}
+Orbit Estimation,, Orbital Dynamic Model, Stahel-Donoho kernel estimator, model error
+compensation. 
+\end{IEEEkeywords}
+
+\section{Introduction}
+This document discuss the topic related Kernel based satellite orbit determination. In this orbit determination mainly contains three steps. First one is orbit determination model, second is kernal estimation of the model error and third step is Depth-Weight kernel estimation. Here Estimating the orbit of a satellite with dyamic model compensation.    
+
+\section{Strengths of paper \cite{pan2009satellite}}
+
+Strengths of Satellite Orbit Determination Based on Stahel–Donoho Kernel Estimator as follows :
+
+\begin{itemize}
+\item Stahel–Donoho Kernel Estimator is a Non-Linear estimation technique.
+\item Estimation algorithm estimate the satellite orbit pricisely even for low presicion dynamical model
+\item Derived Dynamical model from observation contains the un modelled forces 
+\item Predicted Observations are very accurate 
+\item Kernal estimation estimate the model error in two stages and kernal function have excellent large sample property.
+\item Depth weight kernal estimation improve estimation method is very robust \cite{pan2009data}
+\item Estimation technique algorithm ensure convergence and better stability
+           
+ 
+\end{itemize}
+
+\section{Weaknesses of paper \cite{pan2009satellite}}
+Weaknesses of Satellite Orbit Determination Based on Stahel–Donoho Kernel Estimator as follows :
+\begin{itemize}
+\item Stahel–Donoho Kernel Estimator computational intensive, diffcult in impliemnting the real time orbit determination system.
+\item This algoritms required high precission measurements.
+\item This paper \cite{pan2009satellite} simulations are compared with TLE elemnts which is not accurate. 
+\item No information discussed about Gauss-noise.
+\item Limitation of estimation algorithm not discussed. 
+\item Constructed the partially linear orbit determination model for model error in paper \cite{pan2009data}  
+\end{itemize}
+
+
+\bibliographystyle{plain}
+\bibliography{reference}
+
+\end{document}
